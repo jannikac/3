@@ -3,13 +3,19 @@
 
 class rc {
 private:
-  int count;
+  // Zähler für starke Referenzen (shared_ptr)
+  int strongCount;
+  // Zähler für schwache Referenzen (shared_ptr)
+  int weakCount;
 
 public:
   rc();
-  void increment();
-  void decrement();
-  int getCount();
+  void inc_strong();
+  void dec_strong();
+  void inc_weak();
+  void dec_weak();
+  int getStrongCount();
+  int getWeakCount();
 };
 
 #endif
