@@ -19,7 +19,13 @@ Bei Referenzzirkeln kann trotzdem ein Speicherleck entstehen. Smart Pointer mini
 
 ### b)
 
+Siehe `src/{rc.cpp, rc.hpp, string_shared_ptr.cpp, string_shared_ptr.hpp, string_weak_ptr.cpp, string_weak_ptr.hpp}`.
+
+Die String Implementierung (`string.cpp, string.hpp`) wurde aus der Bearbeitung der Aufgabe 2 übernommen.
+
 ### c)
+
+Shared Pointer sollten nur verwendet werden, wenn es ein Objekt gibt, die von mehreren Funktionen gelesen / geändert werden und das Kopieren dieses Objekts aufwendig ist. Wird ein Objekt nur von einer Funktion verwendet, sollte man Unique Pointer verwenden. Da Shared Pointer noch ein weiteres Objekt, das Referenzzählerobjekt, verwalten, entstehen bei exzessiver Verwendung von Shared Pointern Performanceeinbußen.
 
 ### d)
 
