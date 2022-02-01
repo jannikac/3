@@ -49,6 +49,8 @@ Erzeugen und Kopieren von Shared Pointern ist langsam, eventuell Unique Pointer 
 | 23    | 1              | Hier wird der Zeiger aus Zeile 16 gelöscht.                                                                                                          |
 | 25    | 0              | Hier wird `n1` mit `.reset()` zurückgesetzt, weshalb der Referenzzähler um 1 verringert wird und somit läuft der Destruktor.                         |
 
+\pagebreak
+
 ### e)
 
 Baum `b` sieht zunächst so aus:
