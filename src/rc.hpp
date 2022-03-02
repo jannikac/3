@@ -14,8 +14,8 @@ public:
   void dec_strong();
   void inc_weak();
   void dec_weak();
-  int getStrongCount();
-  int getWeakCount();
+  int getStrongCount() const;
+  int getWeakCount() const;
 };
 
 #endif

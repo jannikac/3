@@ -14,6 +14,6 @@ void rc::inc_weak() { weakCount++; }
 // Verringert schwachen Referenzzähler um 1.
 void rc::dec_weak() { weakCount--; }
 // Gibt starken Referenzzähler aus.
-int rc::getStrongCount() { return strongCount; }
+int rc::getStrongCount() const { return strongCount; }
 // Gibt schwachen Referenzzähler aus.
-int rc::getWeakCount() { return weakCount; }
+int rc::getWeakCount() const { return weakCount; }
